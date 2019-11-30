@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registered people"
+            android:textAlignment="center"
+            android:layout_marginLeft="100dp"
+            android:textSize="22sp"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="44dp" />
+
+        <ImageButton
+            android:id="@+id/btnLogout"
+            android:src="@drawable/logout"
+            android:tooltipText="Sign out"
+            android:textAlignment="textEnd"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="70dp"
+            android:layout_height="50dp">
+        </ImageButton>s
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="112dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:hint="Name"
+                android:layout_marginRight="15dp"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+            <EditText
+                android:id="@+id/txtPhone"
+                android:layout_width="116dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="166dp"
+                tools:layout_editor_absoluteY="110dp" />
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="77dp"
+                android:layout_height="42dp"
+                android:text="Save"
+                tools:layout_editor_absoluteX="298dp"
+                tools:layout_editor_absoluteY="108dp" />
+            <Button
+                android:id="@+id/btnSort"
+                android:layout_width="77dp"
+                android:layout_height="42dp"
+                android:text="Sort"
+                tools:layout_editor_absoluteX="298dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textAlignment="textStart"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="260dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
